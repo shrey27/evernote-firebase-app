@@ -2,7 +2,7 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import styles from './styles';
 import List from '@material-ui/core/List';
-import { Divider, Button } from '@material-ui/core';
+import {Divider} from '@material-ui/core';
 import SidebarItemComponent from '../sidebaritem/sidebaritem';
 
 class SidebarComponent extends React.Component{
@@ -25,10 +25,10 @@ class SidebarComponent extends React.Component{
             //classes.sidebarContainer is part of @material-ui/withStyles
             //check the related styles.css file for CSS styling
             <div className={classes.sidebarContainer}>
-                <Button
+                <button
                 onClick={this.newNoteBtnClick}
                 className={classes.newNoteBtn}>{ this.state.addingNote ? 'Cancel' : 'New Note' }
-                </Button>
+                </button>
                 {
                     this.state.addingNote ?  
                     <div>
@@ -37,9 +37,9 @@ class SidebarComponent extends React.Component{
                             placeholder='Enter note Title'
                             onKeyUp={(e) => this.updateTitle(e.target.value)}>
                         </input>
-                        <Button 
+                        <button 
                         className={classes.newNoteSubmitBtn}
-                        onClick={this.newNote}>Submit Note</Button>
+                        onClick={this.newNote}>Submit Note</button>
                     </div> : 
                     null
                 }

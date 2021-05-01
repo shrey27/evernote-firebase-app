@@ -17,12 +17,15 @@ html, body {
 .quill {
   height: 100%;
   box-sizing: border-box;
-  width: calc(100% - 300px);
+  width: calc(100% - 35vh);
   float: left;
 }
 .ql-container {
   box-sizing: border-box;
-  height: calc(100% - 42px);
+  /* height: auto(100% - 42px); */
+  min-height: 85vh;
+  max-height:85vh;
+  /* min-width: 75vh; */
   overflow-y: scroll;
 }
 .ql-editor {

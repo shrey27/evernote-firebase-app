@@ -1,6 +1,6 @@
 const styles = theme => ({
     listItem: {
-      cursor: 'pointer'
+      cursor: 'pointer',
     },
     textSection: {
       maxWidth: '85%'
@@ -11,7 +11,8 @@ const styles = theme => ({
       top: 'calc(50% - 15px)',
       '&:hover': {
         color: 'red'
-      }
+      },
+      padding:'5px'
     }
   });
   

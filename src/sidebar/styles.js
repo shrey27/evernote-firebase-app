@@ -18,19 +18,22 @@ const styles = theme => ({
     },
     newNoteBtn: {
       width: '100%',
-      height: '35px',
+      height: '5vh',
       borderBottom: '1px solid black',
       borderRadius: '0px',
       backgroundColor: '#29487d',
       color: 'white',
+      'font-size' : '15px',
       '&:hover': {
-        backgroundColor: '#88a2ce'
+        textDecoration: 'none',
+        color: '',
       }
+      
     },
     sidebarContainer: {
       marginTop: '0px',
-      width: '300px',
-      height: '100%',
+      width: '35vh',
+      height: '100vh',
       boxSizing: 'border-box',
       float: 'left',
       overflowY: 'scroll',
@@ -42,16 +45,15 @@ const styles = theme => ({
       height: '35px',
       outline: 'none',
       border: 'none',
-      paddingLeft: '5px',
-      '&:focus': {
-        outline: '2px solid rgba(81, 203, 238, 1)'
-      }
+      paddingLeft: '5px'
     },
     newNoteSubmitBtn: {
       width: '100%',
+      height : '5vh',
       backgroundColor: '#28787c',
       borderRadius: '0px',
-      color: 'white'
+      color: 'white',
+      'font-size' : '15px'
     }
   });
   
